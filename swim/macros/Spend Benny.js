@@ -7,7 +7,7 @@ main();
 async function main() {
     // No Token is Selected
     if (!token || canvas.tokens.controlled.length > 1) {
-        ui.notifications.error("Please select a single token first.");
+        ui.notifications.error(game.i18n.format("SWIM.selectSingleToken"));
         return;
     }
 

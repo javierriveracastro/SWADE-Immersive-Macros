@@ -14,7 +14,7 @@ main();
 
 function main() {
   if (canvas.tokens.controlled.length === 0) {
-    ui.notifications.error("Please select a token first");
+    ui.notifications.error(game.i18n.format("SWIM.selectToken"));
     return;
   }
 

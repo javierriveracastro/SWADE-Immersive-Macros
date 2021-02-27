@@ -3,7 +3,7 @@ main();
 function main() {
     // Checking if at least one token is defined.
     if (canvas.tokens.controlled.length === 0) {
-        ui.notifications.error("Please select a token first");
+        ui.notifications.error(game.i18n.format("SWIM.selectToken"));
         return;
     }
     // Checking for SWADE Spices & Flavours and setting up the Benny image.
